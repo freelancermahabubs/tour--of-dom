@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Of DOM</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    li{
+      color: tomato;
+    }
+    #fruits-title{
+      color: black;
+    }
+    .importent-places{
+      color: blueviolet;
+    }
+    .fruits-container li{
+      color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to my DOM</h1>
+  </header>
+  <main id="main-container">
+    <h1>My Awesome DOM de Baba</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum similique cum assumenda consequuntur debitis reprehenderit ratione. Non ex natus illo at quibusdam? Officiis sapiente inventore cumque, dolore dicta culpa.</p>
+    <section>
+      <ul>
+        <li>Jalali Set</li>
+        <li>Shafayet</li>
+        <li>BonoBash</li>
+        <li>DOM Dere Baba</li>
+      </ul>
+    </section>
+    <section class="fruits-container">
+      <h1 id = "fruits-title" class="some-class ramdom-class blue-bg">Fruits I like</h1>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Carrot</li>
+      </ul>
+    </section>
+    <section id="places-container" class="large-text">
+      <h1 id = "places-title">Places I like to Visit</h1>
+      <ul id="places-list">
+        <li class="importent-places">SondarBan</li>
+        <li class="importent-places">BandarBan</li>
+        <li class="importent-places">KataBan</li>
+        <li class="other-place">ShalBan</li>
+      </ul>
+    </section>
+  </main>
+  <script src="js/dom.js"></script>
+  <script src="js/append.js"></script>
+  <script src="js/styleIn.js"></script>
+  <script>
+    const liCollection  = document.getElementsByTagName('li');
+    // console.log(liCollection);
+    for(const li of liCollection){
+      // console.log(li.innerText);
+    }
+    // option-1: getElementsByTagName:
+
+    const allHeadings = document.getElementsByTagName('h1');
+    for(const h1 of allHeadings){
+      // console.log(h1.innerText);
+    }
+    // option-2: getElementByID:
+    const fruitsTitle = document.getElementById('fruits-title');
+    fruitsTitle.innerText = 'Fruits Changed By JavaScript'
+
+    //Option-3: getElementsByClassName:
+    const places = document.getElementsByClassName('importent-places');
+    console.log(places);
+    for(const place of places){
+      // console.log(place.innerText);
+    }
+
+    // option-4: querySelector
+    // querySelector Will return the first Eelement
+
+    // Option-5: querySelectorAll
+    const someLi = document.querySelectorAll('.fruits-container li');
+    console.log(someLi);
+    for(const li of someLi){
+      // console.log(li.innerText);
+    }
+  </script>
+</body>
+</html>

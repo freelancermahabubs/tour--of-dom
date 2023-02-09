@@ -1,0 +1,32 @@
+1. DOM: DOM এর ভিতিরে তিনটা জিনিস থাকে। (1. HTML, 2. CSS, 3. JavaScript)
+
+What DOM Defines?
+1. The Events for all HTML Elements.
+2. The Methods to Access All HTML Elements.
+3. The Properties Of All HTML Elements.
+4. ALL HTML Elements as Objects.
+
+What is DOM?
+Dom is means: Doucment Objects Model.
+
+*যদি কোন HTML Tag কে JavaScript দিয়ে কল করতে হয় তাহলে হবে: Doucment.getElementbyTagName;
+*যদি কোন HTML ID কে JavaScript দিয়ে কল করতে হয় তাহলে হবে: Doucment.getElementbyID;
+
+*queryselector
+*queryselectorAll
+
+*Home Work: HTMLCollection Vs NodeList
+
+*getAttribute.
+*classList
+*classList.add
+*classList.remove
+*setAttribute
+*InnerHTML VS InnerText
+*NextSibling
+*ChildNodes
+*append
+*CreateElement
+*ParentNode
+
+
